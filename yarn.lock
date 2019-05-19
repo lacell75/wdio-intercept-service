@@ -45,6 +45,15 @@
     deepmerge "^2.0.1"
     glob "^7.1.2"
 
+"@wdio/config@^5.8.1":
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/@wdio/config/-/config-5.8.1.tgz#c7a4f2706017bd7834aef8351ef4fd4075bac522"
+  integrity sha512-/1DTXXnsJa04fQXRQz0uwqlkE3Vc9hY9c8P6LJ5vIQOL4tK1MuiHWHpdfywPZlc1Kr8g5oJLSygX9WrSFCZHsA==
+  dependencies:
+    "@wdio/logger" "^5.8.0"
+    deepmerge "^2.0.1"
+    glob "^7.1.2"
+
 "@wdio/local-runner@^5.7.13":
   version "5.7.13"
   resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-5.7.13.tgz#667510d5b46cadc9d65dab44943339a857e2a193"
@@ -60,6 +69,16 @@
   version "5.7.8"
   resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-5.7.8.tgz#c2a58d971ce5b891d7dcd5aafa4ecc2d2d1ef7d5"
   integrity sha512-cbX/fHoTQ7xZvl8X4r828UjWv/ccKhpzPuNGZGukK2DRC7vSOg8sAi8bKNyjvv8nedaZkCQKaSFmsuHHlbIJ7g==
+  dependencies:
+    chalk "^2.3.0"
+    loglevel "^1.6.0"
+    loglevel-plugin-prefix "^0.5.3"
+    strip-ansi "^4.0.0"
+
+"@wdio/logger@^5.8.0":
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-5.8.0.tgz#9d69dec2eaaee011c03de0f9239f8c520dfe8260"
+  integrity sha512-YQ6fybKvWEZPBVf/rrhedohj6g4U1cb9w/6IkHOOhDYbiwwvmAVk7h7QTCsdVc1pxO7Y4/5gI46bmoASgPsrnw==
   dependencies:
     chalk "^2.3.0"
     loglevel "^1.6.0"
@@ -111,14 +130,14 @@
     chalk "^2.3.2"
     pretty-ms "^3.1.0"
 
-"@wdio/sync@^5.7.13":
-  version "5.7.13"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-5.7.13.tgz#4f6651c011ecd6b99858f4795243ae2c519e0d20"
-  integrity sha512-TVtBxrz7VcjfvFWomK8f5+be0FyzZIlxgrdBLLo0elr9bv7q+tNrnImfF+fgliKhlJXyHPLCoPnwEUxMW6Y5eg==
+"@wdio/sync@^5.8.6":
+  version "5.8.6"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-5.8.6.tgz#d48607c327c2674c5b208884a58e28991a13a286"
+  integrity sha512-K7F8cKXbtXA2ljlLdQyCXAb7VYFdO/e9wmRoWEmwsE5TA8AVAD2ZPBRZ3BRl24aKAPukBp2j3vFD7u4noUEXyQ==
   dependencies:
-    "@wdio/config" "^5.7.13"
-    "@wdio/logger" "^5.7.8"
-    fibers "^3.1.1"
+    "@wdio/config" "^5.8.1"
+    "@wdio/logger" "^5.8.0"
+    fibers "^4.0.0"
 
 "@wdio/utils@^5.7.8":
   version "5.7.8"
@@ -914,10 +933,10 @@ fd-slicer@~1.1.0:
   dependencies:
     pend "~1.2.0"
 
-fibers@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/fibers/-/fibers-3.1.1.tgz#0238902ca938347bd779523692fbeefdf4f688ab"
-  integrity sha512-dl3Ukt08rHVQfY8xGD0ODwyjwrRALtaghuqGH2jByYX1wpY+nAnRQjJ6Dbqq0DnVgNVQ9yibObzbF4IlPyiwPw==
+fibers@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/fibers/-/fibers-4.0.1.tgz#34fe8a8d010db7f9096adb2558a45bbc1d03fe45"
+  integrity sha512-H79EJn7DMWXk48ygmC82bMP8KNcFBZF1CPfwBpYF6cO85hGWoIrlu7eyX9ayxfjP9Nsl0JXxdI6fpYU4DWVw2w==
   dependencies:
     detect-libc "^1.0.3"
 
