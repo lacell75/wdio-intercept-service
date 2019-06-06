@@ -45,6 +45,15 @@
     deepmerge "^2.0.1"
     glob "^7.1.2"
 
+"@wdio/config@^5.9.4":
+  version "5.9.4"
+  resolved "https://registry.yarnpkg.com/@wdio/config/-/config-5.9.4.tgz#f8b992d421b9311842facffd5c17da4b1573c7c7"
+  integrity sha512-wlQJJfXwR28xktsXpOC7s/+fWcLAKhIB6s6slCREm3RvcJBfJ9pM4z9lrBRAiawvI4bpNBl8EdUZrRwCtGlkJQ==
+  dependencies:
+    "@wdio/logger" "^5.9.3"
+    deepmerge "^3.2.0"
+    glob "^7.1.2"
+
 "@wdio/local-runner@^5.7.13":
   version "5.7.13"
   resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-5.7.13.tgz#667510d5b46cadc9d65dab44943339a857e2a193"
@@ -65,6 +74,16 @@
     loglevel "^1.6.0"
     loglevel-plugin-prefix "^0.5.3"
     strip-ansi "^4.0.0"
+
+"@wdio/logger@^5.9.3":
+  version "5.9.3"
+  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-5.9.3.tgz#8aab6f1e8aafe7b655b0840e0ed9dcfd70744887"
+  integrity sha512-tpvu/wQqLAaShIIqZr7e/xl3lt9IeE6z/9DN59r+6xTC+RfD8YJ3D1n/c2jOsGbs/IW8RSWRvOERBWvpPcyQxw==
+  dependencies:
+    chalk "^2.3.0"
+    loglevel "^1.6.0"
+    loglevel-plugin-prefix "^0.8.4"
+    strip-ansi "^5.2.0"
 
 "@wdio/mocha-framework@^5.7.13":
   version "5.7.13"
@@ -111,14 +130,14 @@
     chalk "^2.3.2"
     pretty-ms "^3.1.0"
 
-"@wdio/sync@^5.7.13":
-  version "5.7.13"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-5.7.13.tgz#4f6651c011ecd6b99858f4795243ae2c519e0d20"
-  integrity sha512-TVtBxrz7VcjfvFWomK8f5+be0FyzZIlxgrdBLLo0elr9bv7q+tNrnImfF+fgliKhlJXyHPLCoPnwEUxMW6Y5eg==
+"@wdio/sync@^5.10.0":
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-5.10.0.tgz#b8310d347cf4eb7bd322346c4fe1e11e60f7a00c"
+  integrity sha512-FCdbH2BUHDExrovTvI4kCnrwKaNlBpwuwEQYPRLzP2fqFl6W0++XSTsjPChYwS5zV2aiDVU9VUVZSfic8ct+Aw==
   dependencies:
-    "@wdio/config" "^5.7.13"
-    "@wdio/logger" "^5.7.8"
-    fibers "^3.1.1"
+    "@wdio/config" "^5.9.4"
+    "@wdio/logger" "^5.9.3"
+    fibers "^4.0.0"
 
 "@wdio/utils@^5.7.8":
   version "5.7.8"
@@ -914,10 +933,10 @@ fd-slicer@~1.1.0:
   dependencies:
     pend "~1.2.0"
 
-fibers@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/fibers/-/fibers-3.1.1.tgz#0238902ca938347bd779523692fbeefdf4f688ab"
-  integrity sha512-dl3Ukt08rHVQfY8xGD0ODwyjwrRALtaghuqGH2jByYX1wpY+nAnRQjJ6Dbqq0DnVgNVQ9yibObzbF4IlPyiwPw==
+fibers@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/fibers/-/fibers-4.0.1.tgz#34fe8a8d010db7f9096adb2558a45bbc1d03fe45"
+  integrity sha512-H79EJn7DMWXk48ygmC82bMP8KNcFBZF1CPfwBpYF6cO85hGWoIrlu7eyX9ayxfjP9Nsl0JXxdI6fpYU4DWVw2w==
   dependencies:
     detect-libc "^1.0.3"
 
@@ -1761,6 +1780,11 @@ loglevel-plugin-prefix@^0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/loglevel-plugin-prefix/-/loglevel-plugin-prefix-0.5.3.tgz#8e9131b96e4697a0dba517996f76b9e6c3f43210"
   integrity sha512-zRAJw3WYCQAJ6xfEIi04/oqlmR6jkwg3hmBcMW82Zic3iPWyju1gwntcgic0m5NgqYNJ62alCmb0g/div26WjQ==
+
+loglevel-plugin-prefix@^0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/loglevel-plugin-prefix/-/loglevel-plugin-prefix-0.8.4.tgz#2fe0e05f1a820317d98d8c123e634c1bd84ff644"
+  integrity sha512-WpG9CcFAOjz/FtNht+QJeGpvVl/cdR6P0z6OcXSkr8wFJOsV2GRj2j10JLfjuA4aYkcKCNIEqRGCyTife9R8/g==
 
 loglevel@^1.6.0:
   version "1.6.1"
@@ -2953,7 +2977,7 @@ strip-ansi@^5.0.0:
   dependencies:
     ansi-regex "^4.0.0"
 
-strip-ansi@^5.1.0:
+strip-ansi@^5.1.0, strip-ansi@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-5.2.0.tgz#8c9a536feb6afc962bdfa5b104a5091c1ad9c0ae"
   integrity sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==
